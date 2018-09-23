@@ -60,7 +60,7 @@
 
           // Observations
           p.lymph = getQuantityValueAndUnit(lymph[0]);
-
+	    p.foo = 'bar';
 
           // Cerner SoF Tutorial Observations
           // p.height = getQuantityValueAndUnit(height[0]);
