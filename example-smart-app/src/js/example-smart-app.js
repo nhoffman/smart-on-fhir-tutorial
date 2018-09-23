@@ -29,8 +29,8 @@
         $.when(pt, obv).done(function(patient, obv) {
           var byCodes = smart.byCodes(obv, 'code');
           console.log("byCodes:");
-          console.log(byCodes('26478-8'));
-          console.log(byCodes('2345-7'));
+          console.log(byCodes('3141-9')); // weight
+          console.log(byCodes('8302-2')); // height
 
           var gender = patient.gender;
 
@@ -46,14 +46,10 @@
           lymph = byCodes('26478-8');
           // Cerner SoF Tutorial Observations
           // var height = byCodes('8302-2');
-          var systolicbp = getBloodPressureValue(byCodes('55284-4'),'8480-6');
-          var diastolicbp = getBloodPressureValue(byCodes('55284-4'),'8462-4');
+          // var systolicbp = getBloodPressureValue(byCodes('55284-4'),'8480-6');
+          // var diastolicbp = getBloodPressureValue(byCodes('55284-4'),'8462-4');
           // var hdl = byCodes('2085-9');
           // var ldl = byCodes('2089-1');
-
-	    console.log(systolicbp)
-	    console.log(diasystolicbp)
-
 
           var p = defaultPatient();
           p.birthdate = patient.birthDate;
