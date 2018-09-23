@@ -29,8 +29,8 @@
         $.when(pt, obv).done(function(patient, obv) {
           var byCodes = smart.byCodes(obv, 'code');
           console.log("byCodes:");
-          console.log(byCodes('3141-9')); // weight
-          console.log(byCodes('8302-2')); // height
+          // console.log(byCodes('3141-9')); // weight
+          // console.log(byCodes('8302-2')); // height
 
           var gender = patient.gender;
 
